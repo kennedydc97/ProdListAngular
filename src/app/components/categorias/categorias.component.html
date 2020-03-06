@@ -1,1 +1,11 @@
-<p>categorias works!</p>
+<div class="container">
+    <div class="col-lg-3 col-md-3 col-sm-12 mt-4 font-weight-bold">
+        <p class="text-muted"><a href="./index.html">Home</a> > <a href="./produtos.html">Produtos</a></p>
+        <h3 class="bg-primary rounded">Categorias</h3>
+        <ul class="bg-primary rounded">
+            <li *ngFor="let c of categoria">
+                <a href="#" (click)="categoriaClicada.emit(c)">{{c.desc}}</a>
+            </li>
+        </ul>
+    </div>
+</div>
