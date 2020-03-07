@@ -14,6 +14,10 @@ export class ListaDeProdutosComponent implements OnInit {
     console.log(categoria);
   }
 
+  filtrar(){
+    
+  }
+
   ngOnInit(): void {
   }
 

@@ -1,0 +1,21 @@
+.paginaDeProdutos{
+    margin-top: 100px;
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #produtos{
+        width: 100vw;
+        justify-content: center;
+    }
+    .card {
+      margin: 10px 10px 0 0;
+    }
+  }
