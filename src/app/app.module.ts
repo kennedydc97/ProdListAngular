@@ -19,6 +19,7 @@ import { ResumoCompraComponent } from './components/resumo-compra/resumo-compra.
 import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 
 @NgModule({
@@ -39,6 +40,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     ResumoCompraComponent,
     ItemsComponent,
     CheckoutComponent,
+    CadastroComponent,
     FormularioComponent,
   ],
   imports: [
