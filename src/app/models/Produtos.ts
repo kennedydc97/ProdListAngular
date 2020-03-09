@@ -1,7 +1,7 @@
-import { Url } from 'url';
-
 export class Produto{
     constructor(
+                public nome: string,
+                public valor: number,
                 public cod:number, 
                 public imagem: string,
                 public titulo: string,
