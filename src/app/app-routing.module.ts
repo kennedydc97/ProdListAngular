@@ -8,6 +8,7 @@ import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { LoginComponent } from './components/login/login.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 
 const routes: Routes = [
@@ -46,6 +47,9 @@ const routes: Routes = [
   {
     path: "adicionar-produto",
     component: AdicionarProdutosComponent
+  },{
+    path: 'cadastro',
+    component:CadastroComponent
   }
 ];
 

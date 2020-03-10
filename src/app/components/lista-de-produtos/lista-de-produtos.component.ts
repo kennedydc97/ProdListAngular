@@ -41,7 +41,7 @@ export class ListaDeProdutosComponent implements OnInit {
     if(id == 1){
       for(let i = 0; i < this.produtos.length; i++){
         for(let x = 0; x < this.produtos.length; x++){
-          if(this.produtos[i].precoCheio > this.produtos[x].precoCheio){
+          if(this.produtos[i].precoDesconto > this.produtos[x].precoDesconto){
             let aux = this.produtos[i];
             this.produtos[i] = this.produtos[x];
             this.produtos[x] = aux;
@@ -51,7 +51,7 @@ export class ListaDeProdutosComponent implements OnInit {
     }else if(id == 2){
       for(let i = 0; i < this.produtos.length; i++){
         for(let x = 0; x < this.produtos.length; x++){
-          if(this.produtos[i].precoCheio < this.produtos[x].precoCheio){
+          if(this.produtos[i].precoDesconto < this.produtos[x].precoDesconto){
             let aux = this.produtos[i];
             this.produtos[i] = this.produtos[x];
             this.produtos[x] = aux;
