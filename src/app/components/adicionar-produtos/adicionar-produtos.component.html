@@ -1,0 +1,37 @@
+<div class="container" id="addForm">
+    <form [formGroup]="formProduto" (ngSubmit)="enviarProduto()">
+        <div>
+        <p>Código <br> <input type="text" formControlName="cod"></p>
+        
+    </div>
+    <div>
+        <p>Imagem <br> <input type="text" formControlName="imagem"></p>
+        
+    </div>
+    <div>
+        <p>Título <br> <input type="text" formControlName="titulo"></p>
+        
+    </div>
+    <div>
+        <p>Descrição <br> <input type="text" formControlName="desc"></p>
+        
+    </div>
+    <div>
+        <p>Preço Cheio <br>  <input type="text" formControlName="precoCheio"></p>
+       
+    </div>
+    <div>
+        <p>Preço com Desconto <br> <input type="text" formControlName="precoDesconto"></p>
+        
+    </div>
+    <div>
+        <p>Preço no Boleto <br>  <input type="text" formControlName="precoBoleto"></p>
+       
+    </div>
+    <div>
+        <p>ID Categoria <br><input type="text" formControlName="idCategoria"></p>
+        
+    </div>
+    <button class="btn btn-success">Salvar</button>
+</form>
+</div>

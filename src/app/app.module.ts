@@ -20,6 +20,7 @@ import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioComponent } from './components/formulario/formulario.component';
+import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
     ItemsComponent,
     CheckoutComponent,
     FormularioComponent,
+    AdicionarProdutosComponent,
   ],
   imports: [
     BrowserModule,
