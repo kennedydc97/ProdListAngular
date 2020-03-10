@@ -3,8 +3,8 @@
 }
 
 .card:hover{
-    border: solid rgb(127, 126, 133);
-    box-shadow: rgb(127, 126, 133);
+    border: solid rgb(141, 127, 224);
+    box-shadow: rgb(141, 127, 224);
 }
 
 #preco{

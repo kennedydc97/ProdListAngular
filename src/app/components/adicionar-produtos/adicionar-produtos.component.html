@@ -1,4 +1,4 @@
-<div class="container" id="addForm">
+<div class="container mb-3" id="addForm">
     <form [formGroup]="formProduto" (ngSubmit)="enviarProduto()">
         <div>
         <p>Código <br> <input type="text" formControlName="cod"></p>
@@ -32,6 +32,6 @@
         <p>ID Categoria <br><input type="text" formControlName="idCategoria"></p>
         
     </div>
-    <button class="btn btn-success">Salvar</button>
+    <button class="btn btn-success" type="submit">Salvar</button>
 </form>
 </div>

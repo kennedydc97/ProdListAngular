@@ -1,9 +1,9 @@
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-12 font-weight-bold paginaDeProdutos">
+        <div class="col-lg-2 col-md-3 col-sm-12 font-weight-bold paginaDeProdutos">
             <app-categorias (categoriaClicada)="categoriaSelecionada($event)"></app-categorias>
         </div>
-        <div class="col-9 paginaDeProdutos">
+        <div class="col-10 paginaDeProdutos">
             <p class="">Ordenar por:
                 <select (change)="filtrar($event.target.value)" class="border border-dark mr-2">
                     <option selected disabled>Selecione</option>
