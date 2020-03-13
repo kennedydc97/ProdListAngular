@@ -9,6 +9,7 @@ import {
 import { Address } from 'src/app/models/Address';
 import { CepService } from 'src/app/services/cep.service';
 import { Cadastro } from 'src/app/models/Cadastro';
+// import { NgxViacepService } from '@brunoc/ngx-viacep';
 // import { ClientesService } from "./clientes.service";
 
 @Component({
@@ -51,6 +52,7 @@ export class FormularioComponent implements OnInit {
 
     })
   }
+  
 
   pegarCEP(){
     this.cepService.getCep(this.formCadastro.value).subscribe((data) => {
@@ -61,7 +63,6 @@ export class FormularioComponent implements OnInit {
       this.formCadastro.controls['cidade'].patchValue(this.address.cidade);
     })
   }
-
 
   ngOnInit() {
     // this.form = this.formBuilder.group({

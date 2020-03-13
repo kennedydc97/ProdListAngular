@@ -11,7 +11,7 @@ import { AdicionarProdutosComponent } from './components/adicionar-produtos/adic
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: HomeComponent
