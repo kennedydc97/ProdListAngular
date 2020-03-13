@@ -22,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { AdicionarProdutosComponent } from './components/adicionar-produtos/adic
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
