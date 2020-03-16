@@ -5,11 +5,9 @@ import { AppComponent } from './app.component';
 import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
 import { NavComponent } from './components/nav/nav.component';
-import { ProdutosComponent } from './components/produtos/produtos.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProdutoSozinhoComponent } from './components/produto-sozinho/produto-sozinho.component';
-import { LoginComponent } from './components/login/login.component';
 import { FormsComponent } from './components/forms/forms.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CardsProdutosComponent } from './components/cards-produtos/cards-produtos.component';
@@ -23,7 +21,6 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 import { HttpClientModule } from "@angular/common/http";
-import { NgxViacepModule } from '@brunoc/ngx-viacep';
 
 @NgModule({
   declarations: [
@@ -31,10 +28,8 @@ import { NgxViacepModule } from '@brunoc/ngx-viacep';
     ListaDeProdutosComponent,
     CategoriasComponent,
     NavComponent,
-    ProdutosComponent,
     FooterComponent,
     ProdutoSozinhoComponent,
-    LoginComponent,
     FormsComponent,
     CarouselComponent,
     CardsProdutosComponent,
@@ -53,7 +48,6 @@ import { NgxViacepModule } from '@brunoc/ngx-viacep';
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgxViacepModule
   ],
   providers: [],
   bootstrap: [AppComponent]

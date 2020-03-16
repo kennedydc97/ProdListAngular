@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ProdutosComponent } from './components/produtos/produtos.component';
 import { ProdutoSozinhoComponent } from './components/produto-sozinho/produto-sozinho.component';
 import { HomeComponent } from './components/home/home.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-import { LoginComponent } from './components/login/login.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
+import { FormsComponent } from './components/forms/forms.component';
 
 
 export const routes: Routes = [
@@ -21,11 +21,11 @@ export const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: "produtos",
-    component: ProdutosComponent
+    path: "lista-de-produtos",
+    component: ListaDeProdutosComponent
   },
   {
-    path: "produto-sozinho",
+    path: "lista-de-produtos/:id",
     component: ProdutoSozinhoComponent
   },
   {
@@ -41,15 +41,15 @@ export const routes: Routes = [
     component: CheckoutComponent
   },
   {
-    path: 'login',
-    component:LoginComponent
+    path: "forms",
+    component: FormsComponent
   },
   {
     path: "adicionar-produto",
     component: AdicionarProdutosComponent
-  },{
+  }, {
     path: 'cadastro',
-    component:CadastroComponent
+    component: CadastroComponent
   }
 ];
 

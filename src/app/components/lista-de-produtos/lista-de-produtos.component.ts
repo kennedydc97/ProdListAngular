@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Categoria } from 'src/app/models/categorias';
 import { Produto } from 'src/app/models/Produtos';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-lista-de-produtos',
@@ -12,7 +13,7 @@ export class ListaDeProdutosComponent implements OnInit {
   produtos: Produto[] = []
   produtosExibidos: Produto[] = []
 
-  constructor() { 
+  constructor(private router: Router) { 
     this.produtos.push(
       new Produto(1, "assets/produto1.jpg", "Gelo Artificial", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint. Reiciendis impedit nam voluptatum nemo similique libero, asperiores laboriosam totam illo ullam earum doloremque. Culpa, quidem! Sequi architecto enim ipsa.", 27, 24, 23, 2),
       new Produto(2, "assets/gelodecoco.png", "Gelo de Coco", "", 16.65, 15, 10, 3),
@@ -59,6 +60,10 @@ export class ListaDeProdutosComponent implements OnInit {
         }
       }
     }
+  }
+
+  produtoSelecionado(produto){
+      this.router.navigate(['/lista-de-produtos', produto.id])
   }
 
 ngOnInit(): void {
