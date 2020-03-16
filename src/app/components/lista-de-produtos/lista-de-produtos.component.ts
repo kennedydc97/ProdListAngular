@@ -24,7 +24,7 @@ export class ListaDeProdutosComponent implements OnInit {
       new Produto(7, "assets/formasdegelo.jpg", "Formas de Gelo", "", 18, 15, 10, 0),
       new Produto(8, "assets/caixa-de-isopor.png", "Caixa de isopor", "", 50, 24, 23, 0),
       new Produto(9, "assets/pinguin1.png", "Mascote do site", "", 2000, 1350, 1000, 3),
-      new Produto(10, "assets/Olaf.png", "Olaf deboas", "", 1000, 800, 500, 3),)
+      new Produto(10, "assets/Olaf.png", "Olaf", "", 1000, 800, 500, 3),)
     for(let i = 0; i < this.produtos.length; i++){
       this.produtosExibidos.push(this.produtos[i])
     }

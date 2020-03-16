@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Produto } from 'src/app/models/Produtos';
-import { ListaDeProdutosComponent } from '../lista-de-produtos/lista-de-produtos.component';
 import { ActivatedRoute } from '@angular/router'
 
 @Component({
@@ -20,12 +19,11 @@ export class ProdutoSozinhoComponent implements OnInit {
   ngOnInit(): void {
       let id = parseInt(this.route.snapshot.paramMap.get('id'));
       this.produtoId = id;
-      let precoCheio = parseInt(this.route.snapshot.paramMap.get('precoCheio'))
 
 
 
     this.produtos.push(
-      new Produto(1, "assets/produto1.jpg", "Gelo Artificial Reutilizável Pote Com 20 Unidades Bolinha", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint. Reiciendis impedit nam voluptatum nemo similique libero, asperiores laboriosam totam illo ullam earum doloremque. Culpa, quidem! Sequi architecto enim ipsa.", 27, 23, 23, 1))
+      new Produto(1, "assets/produto1.jpg", "Gelo Artificial", "Gelo Artificial Reutilizável Pote Com 20 Unidades Bolinha", 27, 23, 23, 1))
     //   new Produto(2, "assets/gelodecoco.png", "Gelo Artificial Reutilizável Pote Com 20 Unidades Bolinha", "", 16.65, 10, 10, 1),
     //   new Produto(3, "assets/produto3.jpg", "Gelo Artificial Reutilizável Pote Com 20 Unidades Bolinha", "", 30, 27, 27, 1),
     //   new Produto(4, "assets/produto4.jpg", "Gelo Artificial Reutilizável Pote Com 20 Unidades Bolinha", "", 24, 23, 23, 1),
