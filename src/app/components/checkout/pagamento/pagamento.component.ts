@@ -1,7 +1,6 @@
 import { Component, OnInit, OnChanges } from '@angular/core';
 import { Pagamento } from 'src/app/models/Pagamento';
 import { FormGroup, FormControl, } from '@angular/forms';
-import { Validar } from 'src/app/models/validar';
 
 
 

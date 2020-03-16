@@ -13,7 +13,6 @@ export class ProdutoSozinhoComponent implements OnInit {
   produtos: Produto []=[];
 
   public produtoId;
-  public teste;
 
 
   constructor(private route: ActivatedRoute) { }
@@ -22,7 +21,6 @@ export class ProdutoSozinhoComponent implements OnInit {
       let id = parseInt(this.route.snapshot.paramMap.get('id'));
       this.produtoId = id;
       let precoCheio = parseInt(this.route.snapshot.paramMap.get('precoCheio'))
-      this.teste = precoCheio;
 
 
 

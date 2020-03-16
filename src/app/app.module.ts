@@ -14,13 +14,14 @@ import { CardsProdutosComponent } from './components/cards-produtos/cards-produt
 import { HomeComponent } from './components/home/home.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
 import { ResumoCompraComponent } from './components/resumo-compra/resumo-compra.component';
-import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 import { HttpClientModule } from "@angular/common/http";
+import { PagamentoComponent } from './components/checkout/pagamento/pagamento.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +37,12 @@ import { HttpClientModule } from "@angular/common/http";
     HomeComponent,
     SobreNosComponent,
     ResumoCompraComponent,
-    ItemsComponent,
     CheckoutComponent,
     CadastroComponent,
     FormularioComponent,
     AdicionarProdutosComponent,
+    PagamentoComponent,
+    CarrinhoComponent,
   ],
   imports: [
     BrowserModule,

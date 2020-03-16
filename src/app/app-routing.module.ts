@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProdutoSozinhoComponent } from './components/produto-sozinho/produto-sozinho.component';
 import { HomeComponent } from './components/home/home.component';
 import { SobreNosComponent } from './components/sobre-nos/sobre-nos.component';
-import { ItemsComponent } from './components/items/items.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { AdicionarProdutosComponent } from './components/adicionar-produtos/adicionar-produtos.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
