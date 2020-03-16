@@ -29,16 +29,12 @@ export class CheckoutComponent implements OnInit {
       bairro: new FormControl(entrega.bairro),
       cidade: new FormControl(entrega.cidade),
       estado: new FormControl(entrega.estado),
-      nroCartao: new FormControl(entrega.nroCartao),
-      dtaValidade: new FormControl(entrega.dtaValidade),
-      CVV: new FormControl(entrega.CVV),
-      nomeTitular: new FormControl(entrega.nomeTitular),
-      CPFtitular: new FormControl(entrega.CPFtitular)
     })
   }
 
 
-  pegarCep(){
+
+  pegarCpf(){
     this.cepService.getCep(this.formEntrega.value).subscribe((data) => {
       this.address.setEndereco(data.cep, data.logradouro, data.bairro, data.uf, data.localidade)
       this.formEntrega.controls['endereco'].patchValue(this.address.endereco);
@@ -55,9 +51,8 @@ export class CheckoutComponent implements OnInit {
   }
 
 
-  get cpf() {
-    return this.formEntrega.get('CPFtitular');
-  }
+
+  
 
 
 

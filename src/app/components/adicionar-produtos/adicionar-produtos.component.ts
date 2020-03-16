@@ -16,14 +16,14 @@ export class AdicionarProdutosComponent implements OnInit {
 
   private createForm(p: Produto):FormGroup{
     return new FormGroup({
-      cod: new FormControl(p.cod),
+      id: new FormControl(p.id),
       imagem: new FormControl(p.imagem),
       titulo: new FormControl(p.titulo),
       desc: new FormControl(p.desc),
       precoCheio: new FormControl(p.precoCheio),
       precoDesconto: new FormControl(p.precoDesconto),
       precoBoleto: new FormControl(p.precoBoleto),
-      idCategoria: new FormControl(p.cod)
+      idCategoria: new FormControl(p.idCategoria)
     })
   }
 

@@ -9,6 +9,7 @@ import { AdicionarProdutosComponent } from './components/adicionar-produtos/adic
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { ListaDeProdutosComponent } from './components/lista-de-produtos/lista-de-produtos.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 
 export const routes: Routes = [
@@ -32,10 +33,10 @@ export const routes: Routes = [
     path: 'sobre-nos',
     component: SobreNosComponent
   },
-  {
-    path: 'items',
-    component: ItemsComponent
-  },
+  { 
+    path: 'carrinho', 
+    component: CarrinhoComponent
+    },
   {
     path: 'checkout',
     component: CheckoutComponent
